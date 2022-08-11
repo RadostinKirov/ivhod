@@ -69,6 +69,20 @@ header .right a:hover {
     color: yellow;
 }
 
+header #greeting {
+    background-color: white;
+    border: 1px solid darkgreen;
+    color: darkgreen;
+    padding: 5px 15px;
+}
+
+header #greeting:hover {
+    border: 1px solid white;
+    background-color: rgb(108, 160, 108);
+    color: white;
+    cursor: pointers;
+}
+
 #loginBtn {
     padding: 5px 50px;
 }
