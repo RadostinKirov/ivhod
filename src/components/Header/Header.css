@@ -1,0 +1,84 @@
+
+header ul {
+    padding: 20px 40px;
+    margin: 0;
+  }
+  
+  header ul li {
+    list-style-type: none;
+    
+  }
+  
+  header ul a {
+    text-decoration: none;
+  }
+  
+  header ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .left a{
+   color: black; 
+   padding: 20px 10px;
+  }
+  
+  .left a:hover{
+    background-color: rgb(243, 243, 243);
+    transition: 0.3s;
+    color: rgb(0, 130, 81);
+  }
+  
+  h.right a{
+    color:blue;
+  }
+  
+  header .left {
+    display: flex;
+  }
+  header .right {
+    display: flex;
+  }
+  
+  header li {
+    margin: 0 20px;
+    font-size: 25px;
+  }
+  
+  header .right a {
+    background: green;
+    color: white;
+   
+    border-radius: 19px;
+  }
+  
+  header .right a:hover {
+    color: yellow;
+  }
+  
+  header #greeting {
+    background-color: white;
+    border: 1px solid darkgreen;
+    color: darkgreen;
+    padding: 5px 15px;
+  }
+  
+  header #greeting:hover {
+    border: 1px solid white;
+    background-color: rgb(108, 160, 108);
+    color: white;
+    cursor: pointers;
+  }
+  
+  #loginBtn {
+    padding: 5px 50px;
+  }
+  
+  #registerBtn {
+    padding: 5px 10px;
+  }
+  
+  #logoutBtn {
+    padding: 5px 35px;
+  }
+  
