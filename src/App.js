@@ -21,11 +21,8 @@ function App() {
         </header>
 
         <div className="home-page">
-          <main>
-
-
+          
             <section className="table">
-
               <table>
                 <tr>
                   <th>Ап</th>
@@ -65,27 +62,29 @@ function App() {
 
               </table>
             </section>
+          
 
-            <aside>
-              <section className="prihodi">
-                <h2>Приходи</h2>
-                <p>100лв</p>
-              </section>
+          <aside>
 
-              <section className="razhodi">
-                <h2>Разходи</h2>
-                <p>100лв</p>
-              </section>
+            <section className="prihodi">
+              <h2>Приходи</h2>
+              <p>100лв</p>
+            </section>
 
-              <section className="nalichnost">
-                <h2>Текуща наличност</h2>
-                <p>100лв</p>
-              </section>
-            </aside>
+            <section className="razhodi">
+              <h2>Разходи</h2>
+              <p>100лв</p>
+            </section>
 
+            <section className="nalichnost">
+              <h2>Текуща наличност</h2>
+              <p>100лв</p>
+            </section>
+          </aside>
 
-          </main>
         </div>
+
+
         <section className="register-page">
           <form action="">
 
@@ -139,12 +138,19 @@ function App() {
 
             <input className="submit-btn" type="submit" value="Създай профил" />
 
-            <div class ="key-picture">
-            <img src="./images/key2.png" alt="" />
+            <div class="key-picture">
+              <img src="./images/key2.png" alt="" />
             </div>
           </form>
 
         </section>
+      
+      <footer>
+      <p className="footer-name">designed and buit by <span>Radostin Kirov</span></p>
+      <p className="footer-email">radostin.kirov@gmail.com</p>
+      <p className="footer-phone">+359 883 354 018</p>
+      </footer>
+        
       </body>
     </div>
   );

@@ -1,9 +1,9 @@
 html {
   box-sizing: border-box;
   box-sizing: border-box;
-max-width: 1600px;
-font-family: sans-serif;
-margin: auto;
+  max-width: 1600px;
+  font-family: sans-serif;
+  margin: auto;
 }
 
 body {
@@ -95,19 +95,20 @@ header #greeting:hover {
   padding: 5px 35px;
 }
 
-main{
+/* main{
   display: flex;
   flex-direction: row;
   margin-top: 30px;
-}
+} */
 
 .table {
   width: 70%;
-}
-
-table {
   display: flex;
   justify-content: center;
+}
+
+.home-page{
+  display: flex;
 }
 
 th, td {
