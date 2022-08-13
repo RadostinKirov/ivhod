@@ -1,24 +1,25 @@
-import './Header.css'
+import './Header.css';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
 
-    return (
-        <header>
-        <ul>
-          <div className="left">
-            <li><a Link="">Каса</a></li>
-            <li><a Link="">Съобщения</a></li>
-            <li><a Link="">Анкети</a></li>
-          </div>
-          <div className="right">
-            <li><a id="greeting" Link="">Здравей, Иван Иванов</a></li>
-            <li><a id="loginBtn" Link="">вход</a></li>
-            <li><a id="registerBtn" Link="">регистрация</a></li>
-            <li><a id="logoutBtn" Link="">изход</a></li>
-          </div>
-        </ul>
-      </header>
-    )
+  return (
+    <header>
+      <ul>
+        <div className="left">
+          <li><Link to="/">Каса</Link></li>
+          <li><Link to="">Съобщения</Link></li>
+          <li><Link to="">Анкети</Link></li>
+        </div>
+        <div className="right">
+          <li><Link to="" id="greeting">Здравей, Иван Иванов</Link></li>
+          <li><Link to="/login" id="loginBtn">вход</Link></li>
+          <li><Link to="/register" id="registerBtn">регистрация</Link></li>
+          <li><Link to="" id="logoutBtn">изход</Link></li>
+        </div>
+      </ul>
+    </header >
+  )
 }
 
 export default Header;

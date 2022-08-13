@@ -1,0 +1,54 @@
+
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background:linear-gradient(0deg, rgba(255,255,255, 0.9), rgba(255,255,255, 0.9)), url('../images/app\ draft.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+  }
+  
+  .login-page .submit-btn {
+    padding: 5px 20px;
+    background: white;
+    margin-top: 20px;
+    border: 1px solid green;
+    border-radius: 5px;
+    font-size: 18px;
+  }
+  
+  .login-page .submit-btn:hover {
+    cursor: pointer;
+    background-color: green;
+    color: white;
+  }
+  
+  .login-page form div{
+    padding-bottom: 10px;
+  }
+  
+  .login-page .key-picture {
+    width: 100px;
+    position: absolute;
+    right: -53px;
+    top: 19px;
+  }
+  
+  .login-page .key-picture img {
+    width: 100%;
+  }
+  
+  
+.login-page form{
+    border: 2px solid green;
+    padding: 20px 30px;
+    border-radius: 10px;
+    margin: 30px 0;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  
