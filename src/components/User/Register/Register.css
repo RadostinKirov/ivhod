@@ -1,0 +1,73 @@
+
+.register-page {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .email-input, 
+  .name-input, 
+  .last-name-input, 
+  .apartment-input,
+  .password, 
+  .re-pass{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .email-input input, 
+  .name-input input, 
+  .last-name-input input, 
+  .password input , 
+  .re-pass input{
+    width: 180px;
+    padding: 3px;
+    margin: 5px 0;
+    border: 1px solid darkgray;
+    border-radius: 5px;
+  }
+  
+  .apartment-input input {
+    width: 60px;
+    padding: 3px;
+    margin: 5px 0;
+    border: 1px solid darkgray;
+    border-radius: 5px;
+  }
+  
+  .register-page form{
+    border: 2px solid green;
+    padding: 20px 30px;
+    border-radius: 10px;
+    margin: 30px 0;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .register-page {
+    background:linear-gradient(0deg, rgba(255,255,255, 0.9), rgba(255,255,255, 0.9)), url('../images/app\ draft.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .register-page .submit-btn {
+    padding: 5px 20px;
+    background: white;
+    margin-top: 20px;
+    border: 1px solid green;
+    border-radius: 5px;
+    font-size: 18px;
+  }
+  
+  .register-page .submit-btn:hover {
+    cursor: pointer;
+    background-color: green;
+    color: white;
+  }
+  
+  .register-page form div{
+    padding-bottom: 10px;
+  }
+  

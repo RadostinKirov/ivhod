@@ -1,0 +1,25 @@
+
+.table {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .home-page{
+    display: flex;
+  }
+  
+  th, td {
+    padding: 5px;
+    text-align: center;
+  }
+  
+  th {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  td {
+    font-size: 20px;
+  }
+  
