@@ -9,6 +9,8 @@ const Register = () => {
   const [appratment, setAppartment] = useState('');
   const [password, setPassword] = useState('');
   const [rePass, setRePass] = useState('');
+  const [emailEmpty, setEmailEmpty] = useState(false);
+  const [validation, setValidation] = useState(true);
 
 
   const onChangeEmailHandler = (e) => {
@@ -41,14 +43,27 @@ const Register = () => {
     setRePass(rePassInput);
   }
 
+  const onSubmitHandler = (e) => {
+    e.preventDefault();
+    if (email) {
+      setEmailEmpty(false);
+      setValidation(true);
+    } else {
+      setEmailEmpty(true);
+      setValidation(false);
+    }
+  }
+
   return (
 
     <section className="register-page">
-      <form action="">
+      <form action="" onSubmit={onSubmitHandler} className={validation ? "form-valid" : "form-invalid"}>
 
         <div className="email-input" onChange={onChangeEmailHandler}>
           <label>E-mail:</label>
           <input type="text" />
+          {emailEmpty ? <p>Моля попълни email!</p> : ''}
+
         </div>
 
         <div className="name-input" onChange={onChangeNameHandler}>

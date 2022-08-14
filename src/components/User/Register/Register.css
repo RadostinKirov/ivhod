@@ -71,6 +71,16 @@
   }
   
   .register-page form div{
-    padding-bottom: 10px;
+    padding-bottom: 21px;
+  }
+
+  .register-page .form-valid {
+    border: 2px solid green;
+    box-shadow: 0px 0px 15px 0px darkgreen;
+  }
+
+  .register-page .form-invalid{
+    border: 2px solid darkred;
+    box-shadow: 0px 0px 15px 0px darkred;
   }
   
