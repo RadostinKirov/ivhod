@@ -1,9 +1,11 @@
 import { useState } from 'react';
 import './Register.css';
+import { createUser } from '../../service/auth'
 
 const Register = () => {
 
   const [email, setEmail] = useState('');
+  const [emailValid, setEmailValid] = useState(true);
   const [name, setName] = useState('');
   const [lastName, setLastName] = useState('');
   const [appratment, setAppartment] = useState('');
@@ -46,12 +48,31 @@ const Register = () => {
   const onSubmitHandler = (e) => {
     e.preventDefault();
     if (email) {
-      setEmailEmpty(false);
-      setValidation(true);
+      let validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+      if (email.match(validRegex)){
+        setEmailValid(true);
+        setValidation(true);
+        setEmailEmpty(false);
+      }else {
+        setValidation(false);
+        setEmailValid(false);
+        setEmailEmpty(false);
+      }
+
+
     } else {
       setEmailEmpty(true);
+      setEmailValid(true);
       setValidation(false);
     }
+
+    if (validation
+      && !emailEmpty
+      && emailValid
+      ){
+        createUser(email);
+      }
+
   }
 
   return (
@@ -63,6 +84,7 @@ const Register = () => {
           <label>E-mail:</label>
           <input type="text" />
           {emailEmpty ? <p>Моля попълни email!</p> : ''}
+          {!emailValid ? <p>Невалиден email!</p> : ''}
 
         </div>
 
