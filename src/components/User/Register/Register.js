@@ -27,7 +27,7 @@ const Register = () => {
               <input type="text" />
             </div>
 
-            <div className="password">
+            <div className="password-input">
               <label>Парола:</label>
               <input type="password" />
             </div>
